@@ -1,7 +1,7 @@
 from sys import stdin
 from collections import Counter
 
-data= [x.replace("\n","") for x in stdin]
+data= ["_".join(x.replace("\n","").split("_")[:-1]) for x in stdin]
 ocurrence_data=Counter(data)
 item_number=len(data)
 
